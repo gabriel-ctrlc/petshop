@@ -63,7 +63,7 @@ Este é um projeto web estático, então não são necessários passos complexos
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/KaykFz/petshop.git](https://github.com/KaykFz/petshop.git)
+    https://kaykfz.github.io/petshop/
     ```
 2.  **Navegue até a pasta do projeto:**
     ```bash
