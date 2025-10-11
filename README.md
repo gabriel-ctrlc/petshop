@@ -62,11 +62,7 @@ Este é um projeto web estático, então não são necessários passos complexos
     ```bash
     https://kaykfz.github.io/petshop/
     ```
-2.  **Navegue até a pasta do projeto:**
-    ```bash
-    cd petshop
-    ```
-3.  **Abra o arquivo `índice.html`** no seu navegador de preferência.
+
 
 Pronto! O site estará funcionando localmente.
 
