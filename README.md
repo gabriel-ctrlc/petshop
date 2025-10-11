@@ -68,23 +68,13 @@ Pronto! O site estará funcionando localmente.
 
 ## 🤝 Autores
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/gabbye023-crypto">
-        <img src="https://avatars.githubusercontent.com/u/229674800?v=4" width="100px;" alt="Foto de gabbye023-crypto"/><br>
-        <sub>
-          <b>gabbye023-crypto</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/KaykFz">
-        <img src="https://avatars.githubusercontent.com/u/229764612?v=4" width="100px;" alt="Foto de KaykFz"/><br>
-        <sub>
-          <b>KaykFz</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
+| Foto | Nome | GitHub |
+| :---: | :---: | :---: |
+| <img src="https://avatars.githubusercontent.com/u/229674800?v=4" width="100px;" alt="Foto de gabbye023-crypto"/> | **gabbye023-crypto** | [gabbye023-crypto](https://github.com/gabbye023-crypto) |
+| <img src="https://avatars.githubusercontent.com/u/229764612?v=4" width="100px;" alt="Foto de KaykFz"/> | **KaykFz** | [KaykFz](https://github.com/KaykFz) |
+| **-** | **moraisotavio272** | [moraisotavio272](https://github.com/moraisotavio272) |
+| **-** | **gabriel-ctrlc** | [gabriel-ctrlc](https://github.com/gabriel-ctrlc) |
+| **-** | **Leosoaress23** | [Leosoaress23](https://github.com/Leosoaress23) |
+| **-** | **Davi-VTT** | [Davi-VTT](https://github.com/Davi-VTT) |
+
+
