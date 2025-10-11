@@ -76,5 +76,6 @@ Pronto! O site estará funcionando localmente.
 | **-** | **gabriel-ctrlc** | [gabriel-ctrlc](https://github.com/gabriel-ctrlc) |
 | **-** | **Leosoaress23** | [Leosoaress23](https://github.com/Leosoaress23) |
 | **-** | **Davi-VTT** | [Davi-VTT](https://github.com/Davi-VTT) |
+| **-** | **W4rdiu** | [W4rdiu](https://github.com/W4rdiu) |
 
 
