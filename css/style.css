@@ -300,18 +300,43 @@ details img {
   height: auto;
 }
 
-/* Botão whatsapp */
-.whatsapp_age {
-  margin-left: 39%;
-  background-color: rgb(0, 182, 0);
-  color: white;
-  padding: 20px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 5px;
+.servico01 {
   text-decoration: none;
+  color: #333;
 }
-.whatsapp_age:hover {
-  background: #33e0a1;
-}
+
+.agendamento ul li {
+      background-color: #fff;
+      margin: 10px auto;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 400px;
+      font-size: 16px;
+    }
+
+    .agendamento img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 30px auto 10px auto;
+    }
+
+    .whatsapp_age {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      font-weight: bold;
+      padding: 15px 30px;
+      margin-top: 20px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background 0.3s;
+    }
+
+    .whatsapp_age:hover {
+      background-color: #1ebe57;
+    }

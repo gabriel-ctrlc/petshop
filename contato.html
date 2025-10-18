@@ -9,7 +9,7 @@
 
 <body>
   <header>
-    <h1 id="titulo"><b>Contato</b></h1>
+    <h1>Contato</h1>
   </header>
 
   <nav aria-label="Menu principal">
@@ -26,74 +26,44 @@
   </nav>
 
   <main>
-
-    <!-- Contatos -->
     <section class="contato">
       <h2>Endereços de contato</h2>
-      
-      <!-- WhatsApp -->
-      <p>
-        <a class="whatsapp" href="https://wa.me/5511997981283?text=Olá%2C+gostaria+de+agendar+um+serviço+para+meu+pet%21" target="_blank">
-          <!-- Ícone WhatsApp -->
-          <svg width="25" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <!-- caminho omitido por brevidade -->
-          </svg> (11) 99798-1283
-        </a>
-      </p>
-
-      <!-- Email -->
-      <p>
-        <a href="mailto:petshop@gmail.com">
-          <!-- Ícone Email -->
-          <svg width="25" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <!-- caminho omitido por brevidade -->
-          </svg> petshop@gmail.com
-        </a>
-      </p>
-
-      <!-- Instagram -->
-      <p>
-        <a href="https://www.instagram.com/amigolealbanhoetosa/" target="_blank">
-          <!-- Ícone Instagram -->
-          <svg width="20" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <!-- caminho omitido por brevidade -->
-          </svg> @amigolealbanhoetosa
-        </a>
-      </p>
+      <p><a class="whatsapp" href="https://wa.me/5511997981283" target="_blank">📱 WhatsApp: (11) 99798-1283</a></p>
+      <p><a href="mailto:petshop@gmail.com">✉️ Email: petshop@gmail.com</a></p>
+      <p><a href="https://www.instagram.com/amigolealbanhoetosa/" target="_blank">📸 Instagram: @amigolealbanhoetosa</a></p>
     </section>
 
-    <!-- Endereço -->
-    <section class="contato">
-      <h3>Venha nos conhecer</h3>
-      <p class="endereco">R. Cesário Galero, 448/475</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69595.34853711446!2d-46.41909195186805!3d-23.544909941911367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce64275391eabf%3A0xcb3f23320309c533!2sRua%20Alfredo%20Ricci%2C%20101%20-%20Conj.%20Res.%20Jos%C3%A9%20Bonif%C3%A1cio%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008253-010!5e0!3m2!1spt-PT!2sbr!4v1760051974238!5m2!1spt-PT!2sbr"
-        width="1020" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
-    <!-- Horário -->
-    <section class="contato">
+    <section>
       <h3>Horário de atendimento</h3>
-      <p class="horario">
-        Terça a Sábado<br>
-        Das 10:00 às 18:00
-      </p>
+      <p>Terça a Sábado<br>Das 10:00 às 18:00</p>
     </section>
 
-    <!-- Formulário de dúvidas -->
-    <section class="contato">
-      <h3>Ficou com alguma dúvida?</h3>
-      <p>Responda esse formulário</p>
+    <section>
+      <h3>Venha nos conhecer</h3>
+      <p>R. Cesário Galero, 448/475</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7250891015988!2d-46.44142322388427!3d-23.542388160896977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce642753ea48bf%3A0x6865c2d2b167d0a7!2sRua%20Alfredo%20Ricci%2C%20101%20-%20Conj.%20Res.%20Jos%C3%A9%20Bonif%C3%A1cio%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008253-010!5e0!3m2!1spt-PT!2sbr!4v1760819403710!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 
-      <form action="#" method="post">
-        <p>Nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required></p>
-        <p>Email: <input type="email" name="email" id="email" placeholder="Digite seu email" required></p>
-        <p>Número: <input type="tel" name="numero" id="numero" placeholder="Digite seu número" required></p>
-        <p>Sua dúvida: <input type="text" name="duvida" id="duvida" placeholder="Digite sua dúvida" required></p>
-        <p><input type="submit" value="Enviar"></p>
+    <section>
+      <h3>Ficou com alguma dúvida?</h3>
+      <p>Preencha o formulário abaixo:</p>
+
+      <form method="post" action="#">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+        <label for="numero">Número:</label>
+        <input type="tel" id="numero" name="numero" placeholder="Digite seu número" required>
+
+        <label for="duvida">Sua dúvida:</label>
+        <input type="text" id="duvida" name="duvida" placeholder="Digite sua dúvida" required>
+
+        <input type="submit" value="Enviar">
       </form>
     </section>
-
   </main>
 
   <footer>
@@ -105,5 +75,6 @@
     </p>
     <small>Desenvolvido por Turma do bairro</small>
   </footer>
+
 </body>
 </html>

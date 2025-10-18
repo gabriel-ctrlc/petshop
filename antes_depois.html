@@ -1,66 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antes e Depois - AMIGO LEAL</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antes e Depois - AMIGO LEAL</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script>
+    // Define o volume de todos os vídeos para 10%
+    window.addEventListener('DOMContentLoaded', function () {
+      const videos = document.querySelectorAll('video');
+      videos.forEach(video => {
+        video.volume = 0.1;
+      });
+    });
+  </script>
 </head>
+
 <body>
-    
-        <header>
-            <h1></h1>
-        </header>
-        
-        <nav aria-label="Menu principal"> <!--links de navegação-->
-          <a href="index.html">Início</a>
-          <a href="servico.html">Serviços</a>
-          <a href="sobre.html">Sobre</a>
-          <a href="doacoes.html">Doações</a>
-          <a href="contato.html">Contato</a>
-          <a href="agendamento.html">Agendamento</a>
-          <a href="tosatp.html">Tipos de tosa</a>
-          <a href="antes_depois.html">Antes e Depois</a>
-          <a href="dicas.html">Dicas de Cuidado</a>
-          <a href="feedback_faq.html">feedback/FAQ</a>
-        </nav>
+
+  <header>
+    <h1>Antes e Depois</h1>
+  </header>
+
+  <nav aria-label="Menu principal">
+    <a href="index.html">Início</a>
+    <a href="servico.html">Serviços</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="doacoes.html">Doações</a>
+    <a href="contato.html">Contato</a>
+    <a href="agendamento.html">Agendamento</a>
+    <a href="tosatp.html">Tipos de tosa</a>
+    <a href="antes_depois.html">Antes e Depois</a>
+    <a href="dicas.html">Dicas de Cuidado</a>
+    <a href="feedback_faq.html">Feedback/FAQ</a>
+  </nav>
+
   <main>
 
     <!-- Primeiro Pet -->
     <section class="antes-depois">
       <h2>Antes e Depois do Thor</h2>
       <p>O Thor chegou com os pelos embaraçados e estava desconfortável com o calor. Após uma tosa completa, ele saiu muito mais leve, feliz e pronto para brincar. Veja a transformação completa no vídeo abaixo!</p>
-
       <video width="240" height="460" controls>
-        <source src="videos/antes_x_depois_1.mp4" type="video/mp4"> <!--site onde baixei os videos do instagram: https://igram.world/pt/#google_vignette-->
+        <source src="videos/antes_x_depois_1.mp4" type="video/mp4" />
         Seu navegador não suporta a tag de vídeo.
       </video>
     </section>
-
 
     <!-- Segundo Pet -->
     <section class="antes-depois">
       <h2>Antes e Depois da Mel</h2>
       <p>A Mel é uma das nossas clientes mais fiéis! Ela veio para seu banho e tosa de rotina, e o resultado não poderia ser melhor. Seu pelo ficou macio, brilhoso e muito cheiroso. Veja como ela ficou linda após o atendimento!</p>
-
       <video width="240" height="460" controls>
-        <source src="videos/antes_x_depois_2.mp4" type="video/mp4"> <!--site onde baixei os videos do instagram: https://igram.world/pt/#google_vignette-->
+        <source src="videos/antes_x_depois_2.mp4" type="video/mp4" />
         Seu navegador não suporta a tag de vídeo.
       </video>
     </section>
 
-
   </main>
 
-    <footer> <!--rodapé da pagina-->
-        <p>&copy; 2025 AMIGO LEAL PetShop. Todos os direitos reservados.</p>
-        <p>Endereço: Rua Alfredo Ricci, 101 - Conj. Res. José Bonifácio | Tel: (11) 91234-5678</p>
-        <p>Nos siga: 
-            <a href="https://www.instagram.com/amigolealbanhoetosa/" target="_blank">Instagram</a> |  | 
-            <a href="#">WhatsApp</a>
-        </p>
-        <small>Desenvolvido por Turma do bairro</small>
-    </footer>
+  <footer>
+    <p>&copy; 2025 AMIGO LEAL PetShop. Todos os direitos reservados.</p>
+    <p>Endereço: Rua Alfredo Ricci, 101 - Conj. Res. José Bonifácio | Tel: (11) 91234-5678</p>
+    <p>Nos siga: 
+      <a href="https://www.instagram.com/amigolealbanhoetosa/" target="_blank">Instagram</a> | 
+      <a href="#">WhatsApp</a>
+    </p>
+    <small>Desenvolvido por Turma do bairro</small>
+  </footer>
 
 </body>
 </html>
