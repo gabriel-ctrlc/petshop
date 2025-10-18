@@ -1,0 +1,32 @@
+.title{
+    font-weight: bold;
+}
+
+body{
+    background-color: rgb(131, 197, 214);
+    font-weight: 16px;
+}
+
+h1{
+    background-color: azure;
+    text-align: center;
+    border-radius: 20px;
+    color: darkblue;
+}
+
+#lead{
+    text-align: center;
+}
+
+h2{
+    color: rgb(15, 6, 139);
+}
+
+a:link{
+    color: black;
+    text-decoration:brown;
+}
+
+a:hover{
+    color: hotpink;
+}
