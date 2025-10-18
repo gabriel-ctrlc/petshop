@@ -11,15 +11,15 @@ html, body {
 }
 body {
   font-family: "Baloo 2", "Inter", system-ui, sans-serif;
-  background: #fffaf9;
+  background: #fffaf9; /* do primeiro código */
   color: #333;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-top: 100px; /* espaço pro header fixo */
+  padding-top: 100px; /* espaço para header fixo */
 }
 
-/* Paleta */
+/* Paleta de cores (variáveis) */
 :root {
   --rosa: #ffb6c1;
   --rosa-escuro: #ff7aa3;
@@ -48,16 +48,14 @@ header {
   box-shadow: var(--shadow);
   z-index: 1000;
   color: white;
-}
-header .logo {
-  font-size: 32px;
-  transform: rotate(-10deg);
+  text-align: center;
 }
 header h1 {
   font-size: 1.8rem;
   letter-spacing: 2px;
 }
 
+/* Navegação */
 nav {
   background: var(--verde);
   display: flex;
@@ -91,31 +89,20 @@ main {
   padding: 20px;
 }
 section {
-  margin-bottom: 40px;
-}
-section h2 {
-  font-size: 1.6rem;
-  color: var(--rosa-escuro);
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-/* ========================
-   ARTIGOS / CARDS
-======================== */
-section {
   background: white;
   border-radius: var(--round);
   padding: 20px;
   box-shadow: var(--shadow);
   margin-bottom: 20px;
 }
-section h3 {
-  color: var(--verde);
-  margin-bottom: 10px;
+section h2, section h3 {
+  color: var(--rosa-escuro);
+  margin-bottom: 15px;
+  text-align: center;
 }
 section p {
   color: #555;
+  text-align: center;
 }
 
 /* ========================
@@ -150,27 +137,46 @@ section p {
 ======================== */
 form {
   background: white;
-  padding: 20px;
+  padding: 25px 20px;
   border-radius: var(--round);
   box-shadow: var(--shadow);
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 form label {
+  font-weight: bold;
   display: block;
   margin-bottom: 6px;
-  font-weight: bold;
 }
-form input, form textarea, form select {
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea,
+form select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: var(--round);
-  margin-bottom: 14px;
   font-size: 1rem;
 }
-form button {
+form button,
+form input[type="submit"] {
+  background: var(--rosa);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: var(--round);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
   width: 100%;
+}
+form button:hover,
+form input[type="submit"]:hover {
+  background: var(--rosa-escuro);
 }
 
 /* ========================
@@ -196,14 +202,14 @@ table th {
 ======================== */
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
   gap: 16px;
 }
 .galeria img {
   width: 100%;
   border-radius: var(--round);
   box-shadow: var(--shadow);
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 .galeria img:hover {
   transform: scale(1.05);
@@ -221,6 +227,13 @@ footer {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   font-size: 0.9rem;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* ========================
@@ -246,26 +259,32 @@ body::after {
    RESPONSIVIDADE
 ======================== */
 @media (max-width: 600px) {
-  header h1 { font-size: 1.3rem; }
-  nav a { font-size: 0.9rem; padding: 6px 10px; }
-  main { padding: 10px; }
+  header h1 {
+    font-size: 1.3rem;
+  }
+  nav a {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+  main {
+    padding: 10px;
+  }
+  section {
+    padding: 15px;
+  }
 }
 
 /* ========================
-    CENTRALIZAÇÃO
+   CENTRALIZAÇÃO E OUTROS
 =========================== */
-.doacoes img {
+.doacoes img,
+.agendamento img,
+details img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
-}
-
-.agendamento img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
+  border-radius: 10px;
 }
 
 .dicas section {
@@ -275,15 +294,22 @@ body::after {
   height: auto;
 }
 
-p, h3, iframe { 
+p, h3, iframe {
   text-align: center;
 }
 
+.antes-depois {
+  text-align: center;
+  margin: 40px 0;
+}
+
 .antes-depois video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
   display: block;
   margin: 20px auto;
 }
-
 
 .tosatitulo {
   text-align: center;
@@ -292,51 +318,55 @@ p, h3, iframe {
   margin-bottom: 10px;
 }
 
-
-details img {
-  display: block;
-  margin: 10px auto;
-  max-width: 100%;
-  height: auto;
-}
-
 .servico01 {
   text-decoration: none;
-  color: #333;
+  color: var(--texto);
 }
 
+/* Agendamento */
 .agendamento ul li {
-      background-color: #fff;
-      margin: 10px auto;
-      padding: 15px 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      max-width: 400px;
-      font-size: 16px;
-    }
+  background-color: white;
+  margin: 10px auto;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 400px;
+  font-size: 16px;
+}
 
-    .agendamento img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      margin: 30px auto 10px auto;
-    }
+.whatsapp_age {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  font-weight: bold;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+.whatsapp_age:hover {
+  background-color: #1ebe57;
+}
 
-    .whatsapp_age {
-      display: inline-block;
-      background-color: #25d366;
-      color: white;
-      font-weight: bold;
-      padding: 15px 30px;
-      margin-top: 20px;
-      border-radius: 8px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 18px;
-      transition: background 0.3s;
-    }
+/* Feedback */
+.feedback {
+  background-color: white;
+  border-left: 6px solid var(--rosa-escuro);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.feedback blockquote {
+  font-style: italic;
+  margin: 10px 0;
+  color: #555;
+}
+.feedback p {
+  margin: 0;
+}
 
-    .whatsapp_age:hover {
-      background-color: #1ebe57;
-    }
+
