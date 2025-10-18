@@ -284,7 +284,7 @@ p, h3, iframe {
   margin: 20px auto;
 }
 
-/* Centraliza o título da tosa */
+
 .tosatitulo {
   text-align: center;
   font-size: 1.2em;
@@ -292,10 +292,26 @@ p, h3, iframe {
   margin-bottom: 10px;
 }
 
-/* Centraliza as imagens dentro dos <details> */
+
 details img {
   display: block;
   margin: 10px auto;
   max-width: 100%;
   height: auto;
+}
+
+/* Botão whatsapp */
+.whatsapp_age {
+  margin-left: 39%;
+  background-color: rgb(0, 182, 0);
+  color: white;
+  padding: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.whatsapp_age:hover {
+  background: #33e0a1;
 }
