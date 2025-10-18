@@ -1,32 +1,283 @@
-.title{
-    font-weight: bold;
+/* ========================
+   RESET & BASE
+======================== */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html, body {
+ height: 100%;
+}
+body {
+ font-family: "Baloo 2", "Inter", system-ui, sans-serif;
+ /* Fundo claro e suave */
+ background: #f5f8ff; /* Azul bebê/Branco suave */
+ color: #333d51; /* Azul marinho suave para o texto */
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ padding-top: 100px; /* espaço pro header fixo */
 }
 
-body{
-    background-color: rgb(131, 197, 214);
-    font-weight: 16px;
+/* Paleta Suave */
+:root {
+ --fundo-suave: #f5f8ff; 
+ --acento-principal: #b8c4e0; /* Azul lavanda suave */
+ --acento-secundario: #a2cffe; /* Azul celeste claro */
+ --destaque: #ff9d9d; /* Rosa claro */
+ --texto-escuro: #333d51; /* Azul marinho suave */
+ --shadow: 0 6px 16px rgba(184, 196, 224, 0.4); /* Sombra mais leve */
+ --round: 16px;
 }
 
-h1{
-    background-color: azure;
-    text-align: center;
-    border-radius: 20px;
-    color: darkblue;
+/* ========================
+   CABEÇALHO E MENU
+======================== */
+header {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ /* Gradiente suave com tons de azul e rosa */
+ background: linear-gradient(135deg, var(--acento-principal), var(--acento-secundario));
+ padding: 20px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 12px;
+ box-shadow: var(--shadow);
+ z-index: 1000;
+ color: var(--texto-escuro); /* Texto escuro no header suave */
+}
+header .logo {
+ font-size: 32px;
+ transform: rotate(-10deg);
+}
+header h1 {
+ font-size: 1.8rem;
+ letter-spacing: 2px;
 }
 
-#lead{
-    text-align: center;
+nav {
+ background: var(--destaque); /* Fundo da navegação com o rosa de destaque */
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 10px;
+ padding: 12px;
+}
+nav a {
+ text-decoration: none;
+ background: var(--fundo-suave); /* Fundo branco/suave */
+ padding: 8px 14px;
+ border-radius: 999px;
+ font-weight: bold;
+ color: var(--texto-escuro);
+ box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+ transition: all 0.3s ease;
+}
+nav a:hover {
+ background: var(--acento-principal); /* Hover com azul lavanda */
+ color: white;
+ transform: translateY(-3px);
 }
 
-h2{
-    color: rgb(15, 6, 139);
+/* ========================
+   SEÇÕES & TÍTULOS
+======================== */
+main {
+ max-width: 1100px;
+ margin: 20px auto;
+ padding: 20px;
+}
+section {
+ margin-bottom: 40px;
+}
+section h2 {
+ font-size: 1.6rem;
+ color: var(--acento-principal); /* Título de seção com o azul lavanda */
+ text-align: center;
+ margin-bottom: 16px;
 }
 
-a:link{
-    color: black;
-    text-decoration:brown;
+/* ========================
+   ARTIGOS / CARDS
+======================== */
+article {
+ background: white;
+ border-radius: var(--round);
+ padding: 20px;
+ box-shadow: var(--shadow);
+ margin-bottom: 20px;
+}
+article h3 {
+ color: var(--destaque); /* Título do artigo com o rosa claro */
+ margin-bottom: 10px;
+}
+article p {
+ color: var(--texto-escuro);
 }
 
-a:hover{
-    color: hotpink;
+/* ========================
+   BOTÕES
+======================== */
+.btn {
+ display: inline-block;
+ padding: 10px 18px;
+ border-radius: var(--round);
+ border: none;
+ font-weight: bold;
+ cursor: pointer;
+ transition: all 0.2s ease;
+}
+.btn-primary {
+ background: linear-gradient(90deg, var(--acento-principal), var(--acento-secundario));
+ color: white;
+}
+.btn-primary:hover {
+ transform: translateY(-2px);
+}
+.btn-secundario {
+ background: var(--destaque); /* Fundo rosa claro */
+ color: var(--texto-escuro);
+}
+.btn-secundario:hover {
+ background: var(--acento-secundario);
+ color: white;
+}
+
+/* ========================
+   FORMULÁRIOS
+======================== */
+form {
+ background: white;
+ padding: 20px;
+ border-radius: var(--round);
+ box-shadow: var(--shadow);
+ max-width: 600px;
+ margin: 0 auto;
+}
+form label {
+ display: block;
+ margin-bottom: 6px;
+ font-weight: bold;
+}
+form input, form textarea, form select {
+ width: 100%;
+ padding: 10px;
+ border: 1px solid var(--acento-principal); /* Borda com a cor de acento */
+ border-radius: var(--round);
+ margin-bottom: 14px;
+ font-size: 1rem;
+ color: var(--texto-escuro);
+}
+form button {
+ width: 100%;
+}
+
+/* ========================
+   TABELAS
+======================== */
+table {
+ width: 100%;
+ border-collapse: collapse;
+ margin: 20px 0;
+}
+table th, table td {
+ padding: 12px;
+ border: 1px solid var(--acento-secundario); /* Borda suave */
+ text-align: center;
+}
+table th {
+ background: var(--acento-principal);
+ color: white;
+}
+table tr:nth-child(even) {
+    background-color: var(--fundo-suave);
+}
+
+/* ========================
+   GALERIA
+======================== */
+.galeria {
+ display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+ gap: 16px;
+}
+.galeria img {
+ width: 100%;
+ border-radius: var(--round);
+ box-shadow: var(--shadow);
+ transition: transform .2s;
+}
+.galeria img:hover {
+ transform: scale(1.05);
+}
+
+/* ========================
+   RODAPÉ
+======================== */
+footer {
+ background: var(--acento-principal);
+ color: white;
+ text-align: center;
+ padding: 15px;
+ margin-top: 40px;
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+ font-size: 0.9rem;
+}
+
+/* ========================
+   DETALHES FOFOS
+======================== */
+body::before, body::after {
+ content: "🌸"; /* Trocado para uma flor para combinar com a suavidade */
+ position: fixed;
+ font-size: 36px;
+ opacity: 0.3;
+ color: var(--destaque); /* Cor de destaque rosa */
+ pointer-events: none;
+}
+body::before {
+ left: 15px;
+ bottom: 15px;
+}
+body::after {
+ right: 15px;
+ top: 15px;
+}
+
+/* ========================
+   RESPONSIVIDADE
+======================== */
+@media (max-width: 600px) {
+ header h1 { font-size: 1.3rem; }
+ nav a { font-size: 0.9rem; padding: 6px 10px; }
+ main { padding: 10px; }
+}
+
+/* ========================
+    CENTRALIZAÇÃO DE IMAGEM 
+=========================== */
+.doacoes img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.agendamento img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.dicas section {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
