@@ -105,6 +105,11 @@ section p {
   text-align: center;
 }
 
+section a {
+  text-decoration: none;
+  color: var(--texto);
+}
+
 /* ========================
    BOTÕES
 ======================== */
@@ -316,11 +321,6 @@ p, h3, iframe {
   font-size: 1.2em;
   cursor: pointer;
   margin-bottom: 10px;
-}
-
-.servico01 {
-  text-decoration: none;
-  color: var(--texto);
 }
 
 /* Agendamento */
