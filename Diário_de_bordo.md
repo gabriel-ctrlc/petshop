@@ -117,8 +117,10 @@ A principal dificuldade foi manter a comunicação fluindo entre todos, garantin
 
 Ainda encontramos pequenos erros e diferenças nas páginas, exigindo revisões manuais.
 
+Semana Final:
 
-
+No HTML: Realizamos ajustes nos links...
+No CSS: Realizamos ajuste nas imagens e escondemos a decoração dos links par aque não ficasse o tracejado...
 ---
 
 Conclusão Geral (meados de outubro)

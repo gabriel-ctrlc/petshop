@@ -368,3 +368,34 @@ p, h3, iframe {
 .feedback p {
   margin: 0;
 }
+
+
+/* Serviços */
+.servico img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--round); /* opcional, se quiser cantos arredondados */
+  display: block;
+  max-width: 1000px; /* evita que fique maior que o original */
+  margin: 0 auto; /* centraliza */
+}
+
+@media (max-width: 768px) {
+  .servico {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .servico img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .servico h2 {
+    font-size: 1.4em;
+  }
+
+  .servico p {
+    font-size: 1em;
+  }
+}
