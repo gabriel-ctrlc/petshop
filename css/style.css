@@ -399,3 +399,25 @@ p, h3, iframe {
     font-size: 1em;
   }
 }
+
+/* Dicas */
+/* === Responsividade para vídeos (YouTube, etc.) === */
+.dicas iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* mantém proporção do vídeo */
+  max-width: 900px; /* opcional, evita que fique gigante em telas grandes */
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px; /* opcional, deixa o vídeo com cantos arredondados */
+}
+/* Contato */
+.contato iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
