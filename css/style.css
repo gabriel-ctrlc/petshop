@@ -74,11 +74,13 @@ nav a {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   transition: all 0.3s ease;
 }
-nav a:hover {
+nav a:hover,
+nav a.ativo {
   background: var(--rosa);
   color: white;
   transform: translateY(-3px);
 }
+
 
 /* ========================
    SEÇÕES & TÍTULOS
@@ -108,6 +110,12 @@ section p {
 section a {
   text-decoration: none;
   color: var(--texto);
+  padding-left: 0%;
+}
+
+section ul{ /*Centraliza as listas não ordenadas*/
+  list-style-position:inside;
+  text-align: center;
 }
 
 /* ========================
@@ -279,6 +287,26 @@ body::after {
   }
 }
 
+@media (max-width: 768px) {
+  .servico {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .servico img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .servico h2 {
+    font-size: 1.4em;
+  }
+
+  .servico p {
+    font-size: 1em;
+  }
+}
+
 /* ========================
    CENTRALIZAÇÃO E OUTROS
 =========================== */
@@ -380,25 +408,6 @@ p, h3, iframe {
   margin: 0 auto; /* centraliza */
 }
 
-@media (max-width: 768px) {
-  .servico {
-    padding: 10px;
-    text-align: center;
-  }
-
-  .servico img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .servico h2 {
-    font-size: 1.4em;
-  }
-
-  .servico p {
-    font-size: 1em;
-  }
-}
 
 /* Dicas */
 /* === Responsividade para vídeos (YouTube, etc.) === */
