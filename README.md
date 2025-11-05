@@ -1,6 +1,6 @@
 # 🐾 Pet Shop - Agendamentos Online
 
-![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-purple)
+![Status do Projeto](https://img.shields.io/badge/status-Concluído-purple)
 ![GitHub last commit](https://img.shields.io/github/last-commit/gabbye023-crypto/petshop)
 
 > Plataforma online para agendamento de serviços de banho e tosa, desenvolvida como um projeto acadêmico.
@@ -11,23 +11,29 @@ Este projeto é um site institucional para um Pet Shop, desenvolvido como parte 
 
 ## ✨ Funcionalidades
 
-O site é dividido em 8 páginas com as seguintes funcionalidades:
+O site é dividido em 10 páginas com as seguintes funcionalidades:
 
 Página Principal: A porta de entrada do site, com uma visão geral e destaques.
 
 Serviços: Detalhes de todos os serviços de banho e tosa oferecidos.
 
-Sobre/curiosidades: Nossa história, missão e a equipe apaixonada por pets. E curiosidades sobre o mundo animal.
-
-Contato/agendamento: Todas as informações para nos encontrar, como endereço, telefone e e-mail, e redes sociais.
-
-Dicas de Cuidado: Conteúdo relevante com conselhos sobre como cuidar do seu pet.
-
-Tipos de Tosa: Detalhes e exemplos dos diferentes tipos de tosa que realizamos.
+Sobre: Nossa história, missão e a equipe apaixonada por pets. E curiosidades sobre o mundo animal.
 
 Doações: Informações sobre como ajudar e contribuir com a nossa causa.
 
+Contato: Todas as informações para nos encontrar, como endereço, telefone e e-mail, e redes sociais.
+
+Agendamento: Temos nossos serviços e o link do whatsapp para agendar.
+
+Tipos de Tosa: Detalhes e exemplos dos diferentes tipos de tosa que realizamos.
+
+Antes e depois: Temos o antes e o depois para mostrar um pouquinho do trabalho do Petshop.
+
+Dicas de Cuidado: Conteúdo relevante com conselhos sobre como cuidar do seu pet.
+
 Feedback:Sistema de avaliação,para cliente deixarem suas opiniões.
+
+
 
 
 ## 🛠️ Tecnologias Utilizadas
@@ -38,21 +44,6 @@ As seguintes ferramentas estão sendo usadas na construção do projeto:
 * **CSS:** Para a estilização e o design responsivo das páginas.
 * **JavaScript:** Para as funcionalidades interativas, validação de formulários e manipulação do DOM.
 
-## 📂 Estrutura do Projeto
-
-O repositório está organizado da seguinte forma para facilitar a manutenção e o desenvolvimento:
-
-
-/
-├── ativos/
-├── css/
-│   └── style.css
-├── documentos/
-├── imagem/
-│   └── [Imagens e logos do projeto]
-├── js/
-│   └── script.js
-└── índice.html
 
 ## 🏁 Como Executar o Projeto
 
@@ -62,7 +53,7 @@ Este é um projeto web estático, então não são necessários passos complexos
     ```bash
     https://kaykfz.github.io/petshop/
     ```
-
+Abra em uma aba no seu navegador.
 
 Pronto! O site estará funcionando localmente.
 
