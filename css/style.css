@@ -6,9 +6,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html, body {
   height: 100%;
 }
+
 body {
   font-family: "Baloo 2", "Inter", system-ui, sans-serif;
   background: #fffaf9; /* do primeiro código */
@@ -50,9 +52,15 @@ header {
   color: white;
   text-align: center;
 }
+
 header h1 {
   font-size: 1.8rem;
   letter-spacing: 2px;
+}
+
+header img {
+  height: 50px;
+  flex-wrap: wrap;
 }
 
 /* Navegação */
@@ -64,6 +72,7 @@ nav {
   gap: 10px;
   padding: 12px;
 }
+
 nav a {
   text-decoration: none;
   background: white;
@@ -74,13 +83,13 @@ nav a {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   transition: all 0.3s ease;
 }
+
 nav a:hover,
 nav a.ativo {
   background: var(--rosa);
   color: white;
   transform: translateY(-3px);
 }
-
 
 /* ========================
    SEÇÕES & TÍTULOS
@@ -90,6 +99,7 @@ main {
   margin: 20px auto;
   padding: 20px;
 }
+
 section {
   background: white;
   border-radius: var(--round);
@@ -97,11 +107,14 @@ section {
   box-shadow: var(--shadow);
   margin-bottom: 20px;
 }
-section h2, section h3 {
+
+section h2,
+section h3 {
   color: var(--rosa-escuro);
   margin-bottom: 15px;
   text-align: center;
 }
+
 section p {
   color: #555;
   text-align: center;
@@ -113,8 +126,8 @@ section a {
   padding-left: 0%;
 }
 
-section ul{ /*Centraliza as listas não ordenadas*/
-  list-style-position:inside;
+section ul { /*Centraliza as listas não ordenadas*/
+  list-style-position: inside;
   text-align: center;
 }
 
@@ -130,17 +143,21 @@ section ul{ /*Centraliza as listas não ordenadas*/
   cursor: pointer;
   transition: all 0.2s ease;
 }
+
 .btn-primary {
   background: linear-gradient(90deg, var(--rosa), var(--rosa-escuro));
   color: white;
 }
+
 .btn-primary:hover {
   transform: translateY(-2px);
 }
+
 .btn-secundario {
   background: var(--verde);
   color: var(--texto);
 }
+
 .btn-secundario:hover {
   background: var(--amarelo);
 }
@@ -159,11 +176,13 @@ form {
   flex-direction: column;
   gap: 15px;
 }
+
 form label {
   font-weight: bold;
   display: block;
   margin-bottom: 6px;
 }
+
 form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
@@ -175,6 +194,7 @@ form select {
   border-radius: var(--round);
   font-size: 1rem;
 }
+
 form button,
 form input[type="submit"] {
   background: var(--rosa);
@@ -187,6 +207,7 @@ form input[type="submit"] {
   transition: background 0.3s ease;
   width: 100%;
 }
+
 form button:hover,
 form input[type="submit"]:hover {
   background: var(--rosa-escuro);
@@ -200,11 +221,14 @@ table {
   border-collapse: collapse;
   margin: 20px 0;
 }
-table th, table td {
+
+table th,
+table td {
   padding: 12px;
   border: 1px solid #eee;
   text-align: center;
 }
+
 table th {
   background: var(--rosa);
   color: white;
@@ -215,15 +239,17 @@ table th {
 ======================== */
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 16px;
 }
+
 .galeria img {
   width: 100%;
   border-radius: var(--round);
   box-shadow: var(--shadow);
   transition: transform 0.2s;
 }
+
 .galeria img:hover {
   transform: scale(1.05);
 }
@@ -241,10 +267,12 @@ footer {
   border-top-right-radius: 20px;
   font-size: 0.9rem;
 }
+
 footer a {
   color: white;
   text-decoration: none;
 }
+
 footer a:hover {
   text-decoration: underline;
 }
@@ -252,17 +280,20 @@ footer a:hover {
 /* ========================
    DETALHES FOFOS
 ======================== */
-body::before, body::after {
+body::before,
+body::after {
   content: "🐾";
   position: fixed;
   font-size: 36px;
   opacity: 0.2;
   pointer-events: none;
 }
+
 body::before {
   left: 15px;
   bottom: 15px;
 }
+
 body::after {
   right: 15px;
   top: 15px;
@@ -275,13 +306,16 @@ body::after {
   header h1 {
     font-size: 1.3rem;
   }
+
   nav a {
     font-size: 0.9rem;
     padding: 6px 10px;
   }
+
   main {
     padding: 10px;
   }
+
   section {
     padding: 15px;
   }
@@ -327,7 +361,9 @@ details img {
   height: auto;
 }
 
-p, h3, iframe {
+p,
+h3,
+iframe {
   text-align: center;
 }
 
@@ -375,6 +411,7 @@ p, h3, iframe {
   font-size: 18px;
   transition: background 0.3s;
 }
+
 .whatsapp_age:hover {
   background-color: #1ebe57;
 }
@@ -388,15 +425,16 @@ p, h3, iframe {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
 .feedback blockquote {
   font-style: italic;
   margin: 10px 0;
   color: #555;
 }
+
 .feedback p {
   margin: 0;
 }
-
 
 /* Serviços */
 .servico img {
@@ -407,7 +445,6 @@ p, h3, iframe {
   max-width: 1000px; /* evita que fique maior que o original */
   margin: 0 auto; /* centraliza */
 }
-
 
 /* Dicas */
 /* === Responsividade para vídeos (YouTube, etc.) === */
@@ -420,6 +457,7 @@ p, h3, iframe {
   margin: 0 auto;
   border-radius: 12px; /* opcional, deixa o vídeo com cantos arredondados */
 }
+
 /* Contato */
 .contato iframe {
   width: 100%;
