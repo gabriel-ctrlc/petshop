@@ -44,6 +44,45 @@ As seguintes ferramentas estão sendo usadas na construção do projeto:
 * **CSS:** Para a estilização e o design responsivo das páginas.
 * **JavaScript:** Para as funcionalidades interativas, validação de formulários e manipulação do DOM.
 
+📂 Estrutura do Projeto
+
+Abaixo está a estrutura de diretórios e arquivos do projeto conforme o repositório no GitHub:
+
+petshop/
+│
+├── assets/                  # Arquivos gerais e ícones iniciais
+│
+├── css/                     # Folhas de estilo do projeto
+│   └── style.css
+│
+├── docs/                    # Documentos e arquivos auxiliares
+│
+├── img/                     # Imagens e logotipos
+│
+├── js/                      # Scripts JavaScript
+│   └── script.js
+│
+├── paginas/                 # Páginas complementares e README interno
+│   └── README.md
+│
+├── videos/                  # Vídeos e mídias visuais
+│
+├── agendamento.html         # Página de agendamento (com VLibras)
+├── antes_depois.html        # Página de antes e depois (com VLibras)
+├── contato.html             # Página de contato (com VLibras)
+├── dicas.html               # Página de dicas de cuidado (com VLibras)
+├── doacoes.html             # Página de doações (com VLibras)
+├── feedback_faq.html        # Página de feedback e perguntas frequentes (com VLibras)
+├── index.html               # Página inicial do site (com VLibras)
+├── servico.html             # Página de serviços (com VLibras)
+├── sobre.html               # Página sobre o Pet Shop (com VLibras)
+├── tosatp.html              # Página de tipos de tosa (com VLibras)
+│
+├── Diário_de_bordo.md       # Registro de progresso e aprendizado do projeto
+└── README.md                # Documento principal do projeto
+
+
+
 
 ## 🏁 Como Executar o Projeto
 
