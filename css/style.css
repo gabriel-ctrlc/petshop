@@ -1,134 +1,134 @@
 /* ========================
    RESET & BASE
 ======================== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {      /*seleciona tudo da pagina*/
+  margin: 0;  /*remove margens padrão do nav */
+  padding: 0; /*remove espaços dos navegadores */
+  box-sizing: border-box; /*faz com que width e height incluam padding e margin*/
 }
 
 html, body {
-  height: 100%;
+  height: 100%; /*faz com que o body ocupe 100% da altura de tela*/
 }
 
 body {
-  font-family: "Baloo 2", "Inter", system-ui, sans-serif;
+  font-family: "Baloo 2", "Inter", system-ui, sans-serif; /*define as fontes a serem usadas*/
   background: #fffaf9; /* do primeiro código */
-  color: #333;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: #333;  /*define a cor do texto para preto*/
+  line-height: 1.6; /*espaçamento entre linhas*/
+  -webkit-font-smoothing: antialiased;  /*melhora o render, deixa o texto mais suave*/
+  -moz-osx-font-smoothing: grayscale;   /*cria espaço no topo do body*/
   padding-top: 100px; /* espaço para header fixo */
 }
 
-/* Paleta de cores (variáveis) */
-:root {
-  --rosa: #ffb6c1;
-  --rosa-escuro: #ff7aa3;
+/* Paleta de cores variáveis */
+:root {     /*usado para definir variaveis*/
+  --rosa: #ffb6c1;  /*variaveis*/
+  --rosa-escuro: #ff7aa3; 
   --verde: #a8e6cf;
   --amarelo: #fff3b0;
   --cinza-claro: #f9f9f9;
   --texto: #333;
-  --shadow: 0 8px 24px rgba(0,0,0,0.08);
-  --round: 16px;
+  --shadow: 0 8px 24px rgba(0,0,0,0.08); /*padrão de somra*/
+  --round: 16px;    /*define raio de borda*/
 }
 
 /* ========================
    CABEÇALHO E MENU
 ======================== */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(135deg, var(--rosa), var(--rosa-escuro));
-  padding: 20px;
-  display: flex;
-  align-items: center;
+  position: fixed; /* mantem o cabeçalho fixo no topo*/
+  top: 0;   /*fixam posição nas bordas superiores*/
+  left: 0;  /*fixam posição nas bordas superiores*/
+  right: 0; /*fixam posição nas bordas superiores*/
+  background: linear-gradient(135deg, var(--rosa), var(--rosa-escuro)); /*degrade*/
+  padding: 20px;  /*espaçamento*/
+  display: flex;  /*organiza header linha a linha*/ 
+  align-items: center;    /*centraliza os itens*/
   justify-content: center;
-  gap: 12px;
-  box-shadow: var(--shadow);
-  z-index: 1000;
-  color: white;
-  text-align: center;
+  gap: 12px;    /*espaço esntre os itens*/
+  box-shadow: var(--shadow);  
+  z-index: 1000;  /*faz o reader ficar acima de outros elementos*/
+  color: white; /*cor do texto*/
+  text-align: center; /*centraliza texto*/
 }
 
 header h1 {
-  font-size: 1.8rem;
-  letter-spacing: 2px;
+  font-size: 1.8rem; /*tamanho da fonte*/
+  letter-spacing: 2px;  /*espaço entre as letras*/
 }
 
 header img {
-  height: 50px;
-  flex-wrap: wrap;
+  height: 50px; /*altura da imagem do header*/
+  flex-wrap: wrap;  
 }
 
 /* Navegação */
 nav {
-  background: var(--verde);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  padding: 12px;
+  background: var(--verde); /*cor de fundo*/
+  display: flex;    /*organiza links lado a lado*/
+  flex-wrap: wrap;  /*itens vão para outra linha se não couber*/
+  justify-content: center;  /*centraliza os links*/
+  gap: 10px;    /*espaçamento*/
+  padding: 12px;  /*espaço interno da barra*/
 }
 
 nav a {
-  text-decoration: none;
-  background: white;
-  padding: 8px 14px;
-  border-radius: 999px;
-  font-weight: bold;
-  color: var(--texto);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
+  text-decoration: none; /*remove o sublinhado*/
+  background: white;  /*cor de fundo*/
+  padding: 8px 14px;  
+  border-radius: 999px; /*faz os botoés ficarem redondo*/
+  font-weight: bold;  /*texto em negrito*/
+  color: var(--texto);  /*utilização da variavel*/
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /*sobra leve*/
+  transition: all 0.3s ease;  /*animação mais lenta*/
 }
 
 nav a:hover,
-nav a.ativo {
-  background: var(--rosa);
+nav a.ativo {   /*id que faz a barra de navegação ficar no estado ativo*/
+  background: var(--rosa); 
   color: white;
-  transform: translateY(-3px);
+  transform: translateY(-3px); /*eleva o botão criando animação*/
 }
 
 /* ========================
    SEÇÕES & TÍTULOS
 ======================== */
 main {
-  max-width: 1100px;
-  margin: 20px auto;
-  padding: 20px;
+  max-width: 1100px; /*limita a largura maxima da pagina*/
+  margin: 20px auto;  /*espaçamento externo no topo e auto nas extremidades*/
+  padding: 20px;  /*cria espaço dentro do main*/
 }
 
 section {
-  background: white;
-  border-radius: var(--round);
-  padding: 20px;
-  box-shadow: var(--shadow);
-  margin-bottom: 20px;
+  background: white; /*cor de fundo*/
+  border-radius: var(--round); /*borda com o valor da variavel*/
+  padding: 20px;    /*espaço entre conteudo e borda*/
+  box-shadow: var(--shadow);  /*sombra em volta do bloco*/
+  margin-bottom: 20px;  /*separa verticalmente as seções*/
 }
 
 section h2,
 section h3 {
-  color: var(--rosa-escuro);
-  margin-bottom: 15px;
-  text-align: center;
+  color: var(--rosa-escuro); /*cor dos textos*/
+  margin-bottom: 15px;    /*espaço em baixo dos titulos*/
+  text-align: center;   /*texto no centro*/
 }
 
 section p {
-  color: #555;
-  text-align: center;
+  color: #555;  /*cor das letras*/
+  text-align: center; /*texto no centro*/
 }
 
 section a {
-  text-decoration: none;
-  color: var(--texto);
-  padding-left: 0%;
+  text-decoration: none; /*remove sublinhados*/
+  color: var(--texto);  /*cor do texto*/
+  padding-left: 0%;   /*sem espaçamento na esquerda para alinhar*/
 }
 
 section ul { /*Centraliza as listas não ordenadas*/
-  list-style-position: inside;
-  text-align: center;
+  list-style-position: inside;  /*as bolinhas ficam dentro da caixa de teto*/
+  text-align: center;   /*centraliza texto e marcadores*/
 }
 
 /* ========================
